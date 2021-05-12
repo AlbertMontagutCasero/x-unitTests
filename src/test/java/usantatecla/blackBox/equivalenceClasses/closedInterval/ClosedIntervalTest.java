@@ -44,6 +44,7 @@ public class ClosedIntervalTest {
 		assertThat(closedInterval.includes(new ClosedInterval(-1, 1)), is(true));
 		assertThat(closedInterval.includes(new ClosedInterval(0, 7)), is(false));
 		assertThat(closedInterval.includes(new ClosedInterval(7, 9)), is(false));
+		assertThat(closedInterval.includes(new ClosedInterval(-3, 8)), is(false));
 	}
 	
 	@Test(expected=AssertionError.class)

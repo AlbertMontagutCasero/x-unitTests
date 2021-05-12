@@ -12,7 +12,6 @@ public class MathTest {
 	
 	@Test
 	public void testAbs() {
-		System.out.println(Math2.abs(25));
 		assertThat(Math2.abs(-0.99), is(closeTo(0.99, PRECISION)));
 		assertThat(Math2.abs(37.43), is(closeTo(37.43, PRECISION)));
 	}

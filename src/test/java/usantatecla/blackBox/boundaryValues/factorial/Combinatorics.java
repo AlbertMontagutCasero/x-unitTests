@@ -9,10 +9,11 @@ public class Combinatorics {
 		long acum = 1;
 		for(int i=1; i<=value; i++){
 			acum *= i;
-			if (acum < 0){
-				throw new AssertionError();
-			}
+			// if (acum < 0){
+			// 	throw new AssertionError();
+			// }
 		}
 		return acum;
 	}
+	
 }

@@ -1,7 +1,7 @@
 package usantatecla.closedInterval.v4.neverFailingTest;
 
 import static org.junit.Assert.assertThat;
-
+//import static org.junit.Assert.fail;
 import static org.hamcrest.CoreMatchers.is;
 
 import org.junit.Test;
@@ -14,6 +14,7 @@ public class ClosedIntervalTest {
 	public void testClosedIntervalWithInverseError() {
 		try {
 			new ClosedInterval(20, -30);
+			//fail();
 		} catch (AssertionError e){
 			System.out.println("Error!!! Debería mostrar este mensaje");
 		}

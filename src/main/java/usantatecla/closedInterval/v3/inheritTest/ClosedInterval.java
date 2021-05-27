@@ -1,4 +1,4 @@
-package usantatecla.closedInterval.v3.extends;
+package usantatecla.closedInterval.v3.inheritTest;
 
 public class ClosedInterval {
 	private double min;

@@ -1,4 +1,4 @@
-package usantatecla.closedInterval.v3;
+package usantatecla.closedInterval.v3.inheritTest;
 
 import static org.junit.Assert.assertThat;
 
@@ -6,7 +6,7 @@ import static org.hamcrest.CoreMatchers.is;
 
 import org.junit.Test;
 
-import usantatecla.closedInterval.v3.models.ClosedInterval;
+import usantatecla.closedInterval.v3.inheritTest.models.ClosedInterval;
 
 public class ClosedIntervalTest {
 

@@ -1,6 +1,6 @@
-package usantatecla.closedInterval.v3.models;
+package usantatecla.closedInterval.v3.inheritTest.models;
 
-public class ClosedInterval extends usantatecla.closedInterval.v3.ClosedInterval {
+public class ClosedInterval extends usantatecla.closedInterval.v3.inheritTest.ClosedInterval {
 
 	public ClosedInterval(double min, double max) {
 		super(min, max);

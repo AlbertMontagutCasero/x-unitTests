@@ -1,4 +1,4 @@
-package usantatecla.shuffleTest.v2;
+package usantatecla.shuffleTest.v2.notErraticTest;
 
 import static org.junit.Assert.*;
 

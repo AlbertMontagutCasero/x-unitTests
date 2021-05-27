@@ -1,6 +1,6 @@
-package usantatecla.characteristics.risk.safetyNet.incompleteTest;
+package usantatecla.factorial.v2.completeTest;
 
-public class Combinatorics {
+public class Math {
 
 	static final long FACTORIAL_MAX_VALUE = 20;
 

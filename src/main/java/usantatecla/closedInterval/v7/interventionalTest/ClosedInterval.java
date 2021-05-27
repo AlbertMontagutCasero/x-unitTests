@@ -1,4 +1,4 @@
-package usantatecla.closedInterval.v6.automated;
+package usantatecla.closedInterval.v7.interventionalTest;
 
 public class ClosedInterval {
 	private double min;
@@ -6,7 +6,7 @@ public class ClosedInterval {
 
 	public ClosedInterval(double min, double max) {
 		assert min <= max;
-		
+
 		this.min = min;
 		this.max = max;
 	}
@@ -54,6 +54,11 @@ public class ClosedInterval {
 		assert this.intersected(closedInterval);
 
 		return new ClosedInterval(Math.min(min, closedInterval.min), Math.max(max, closedInterval.max));
+	}
+
+	@Override
+	public String toString() {
+		return "[" + min + ", " + max + "]";
 	}
 
 }

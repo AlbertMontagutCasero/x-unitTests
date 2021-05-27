@@ -1,4 +1,4 @@
-package usantatecla.characteristics.risk.safetyNet.erraticTest.v1;
+package usantatecla.shuffleTest.v1.erraticTest;
 
 import static org.junit.Assert.*;
 

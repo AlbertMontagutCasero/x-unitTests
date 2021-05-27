@@ -1,4 +1,4 @@
-package usantatecla.characteristics.risk.safetyNet.erraticTest.v2;
+package usantatecla.shuffleTest.v2;
 
 import static org.junit.Assert.*;
 
@@ -13,7 +13,7 @@ import org.junit.Test;
 
 public class ShuffleTest {
 
-	private static final int MAX_LONG = 10;
+	private static final int MAX_VALUE = 10;
 
 	@Test
 	public void testShuffle() {
@@ -24,7 +24,7 @@ public class ShuffleTest {
 
 	private void testShuffle(Integer[] values) {
 		for (int value : values) {
-			assert value < MAX_LONG;
+			assert value < ShuffleTest.MAX_VALUE;
 		}
 		List<Integer> list = Arrays.asList(values);
 		int[] expectedItemTimes = itemTimes(list);
@@ -34,7 +34,7 @@ public class ShuffleTest {
 	}
 
 	private int[] itemTimes(List<Integer> list) {
-		int[] itemTimes = new int[MAX_LONG];
+		int[] itemTimes = new int[ShuffleTest.MAX_VALUE];
 		for (int value : list) {
 			itemTimes[value]++;
 		}

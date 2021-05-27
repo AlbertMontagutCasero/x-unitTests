@@ -30,13 +30,16 @@ public class ClosedInterval {
 	public boolean includes(ClosedInterval closedInterval) {
 		assert closedInterval != null;
 
-		return this.includes(closedInterval.min) && this.includes(closedInterval.max);
+		return this.includes(closedInterval.min) 
+			&& this.includes(closedInterval.max);
 	}
 
 	public boolean intersected(ClosedInterval closedInterval) {
 		assert closedInterval != null;
 
-		return this.includes(closedInterval.min) || this.includes(closedInterval.max) || closedInterval.includes(this);
+		return this.includes(closedInterval.min) 
+			|| this.includes(closedInterval.max) 
+			|| closedInterval.includes(this);
 	}
 
 	public ClosedInterval intersection(ClosedInterval closedInterval) {

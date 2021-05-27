@@ -1,22 +1,26 @@
-package usantatecla.closedInterval.v3.inheritTest;
+package usantatecla.closedInterval.v5.loweredExpectations;
 
 import static org.junit.Assert.assertThat;
 
 import static org.hamcrest.CoreMatchers.is;
+import static org.hamcrest.number.OrderingComparison.greaterThanOrEqualTo;
 
 import org.junit.Test;
-
-import usantatecla.closedInterval.v3.inheritTest.models.ClosedInterval;
 
 public class ClosedIntervalTest {
 
 	private ClosedInterval closedInterval;
 
+	@Test(expected = AssertionError.class)
+	public void testClosedIntervalWithInverseError() {
+		new ClosedInterval(20, -30);
+	}
+
 	@Test
 	public void testClosedInterval() {
 		closedInterval = new ClosedInterval(-20, 30);
-		assertThat(closedInterval.getMin(), is(-20.0));
-		assertThat(closedInterval.getMax(), is(30.0));
+		assertThat(closedInterval.getLength(), is(greaterThanOrEqualTo(0.0)));
+		//assertThat(closedInterval.getMiddlePoint(), is(5.0));
 	}
 
 	@Test

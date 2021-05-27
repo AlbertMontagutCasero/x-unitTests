@@ -10,11 +10,6 @@ public class ClosedIntervalTest {
 
 	private ClosedInterval closedInterval;
 
-	@Test(expected = AssertionError.class)
-	public void testClosedIntervalWithInverseError() {
-		new ClosedInterval(20, -30);
-	}
-
 	@Test
 	public void testClosedInterval() {
 		closedInterval = new ClosedInterval(-20, 30);

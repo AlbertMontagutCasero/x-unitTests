@@ -5,6 +5,8 @@ public class ClosedInterval {
 	private double max;
 
 	public ClosedInterval(double min, double max) {
+		assert min <= max;
+		
 		this.min = min;
 		this.max = max;
 	}

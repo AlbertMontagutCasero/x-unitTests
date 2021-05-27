@@ -11,13 +11,18 @@ public class ClosedIntervalTest {
 	private ClosedInterval closedInterval;
 
 	@Test
-	public void testClosedIntervalWithInverseError() {
+	public void testClosedIntervalWithInverseErrorWrong() {
 		try {
 			new ClosedInterval(20, -30);
 			// fail();
 		} catch (AssertionError e) {
 			System.out.println("Error!!! Debería mostrar este mensaje");
 		}
+	}
+
+	@Test(expected = AssertionError.class)
+	public void testClosedIntervalWithInverseErrorGood() {
+		closedInterval = new ClosedInterval(20, -30);
 	}
 
 	@Test

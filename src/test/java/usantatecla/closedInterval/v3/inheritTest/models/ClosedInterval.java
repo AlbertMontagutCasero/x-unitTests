@@ -7,10 +7,10 @@ public class ClosedInterval extends usantatecla.closedInterval.v3.inheritTest.Cl
 	}
 
 	public double getMin() {
-		return this.getMiddlePoint() - this.getLength()/2;
+		return this.getMiddlePoint() - this.getLength() / 2;
 	}
 
 	public double getMax() {
-		return this.getMiddlePoint() + this.getLength()/2;
+		return this.getMiddlePoint() + this.getLength() / 2;
 	}
 }

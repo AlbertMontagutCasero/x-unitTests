@@ -1,13 +1,12 @@
-package usantatecla.characteristics.executable.fast.slowTest;
+package usantatecla.ticTacToe.v1.utils;
 
 public class ClosedInterval {
-
 	private double min;
-
 	private double max;
 
 	public ClosedInterval(double min, double max) {
 		assert min <= max;
+		
 		this.min = min;
 		this.max = max;
 	}

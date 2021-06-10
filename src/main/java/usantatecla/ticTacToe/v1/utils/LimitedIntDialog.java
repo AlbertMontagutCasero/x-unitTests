@@ -1,4 +1,4 @@
-package usantatecla.characteristics.executable.fast.slowTest;
+package usantatecla.ticTacToe.v1.utils;
 
 public class LimitedIntDialog {
 

@@ -1,10 +1,12 @@
-package usantatecla.characteristics.executable.fast.slowTest;
+package usantatecla.ticTacToe.v1.models;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.Scanner;
+
+import usantatecla.ticTacToe.v1.utils.Coordinate;
 
 public class DecisionTreeBoard extends Board {
 

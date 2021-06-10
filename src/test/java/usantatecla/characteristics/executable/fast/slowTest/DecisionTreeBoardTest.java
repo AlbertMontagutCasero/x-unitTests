@@ -9,6 +9,10 @@ import java.util.Scanner;
 
 import org.junit.Test;
 
+import usantatecla.ticTacToe.v1.models.Color;
+import usantatecla.ticTacToe.v1.models.DecisionTreeBoard;
+import usantatecla.ticTacToe.v1.utils.Coordinate;
+
 public class DecisionTreeBoardTest {
 
 	@Test

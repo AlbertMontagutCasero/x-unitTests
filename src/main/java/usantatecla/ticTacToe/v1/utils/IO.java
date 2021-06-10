@@ -1,4 +1,4 @@
-package usantatecla.characteristics.executable.fast.slowTest;
+package usantatecla.ticTacToe.v1.utils;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
